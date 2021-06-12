@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>映画『Break out』HP</title>
+	<meta name="author" content="topology" />
+    <meta name="description" content="映画『Break out』HP" />
+    <meta name="keywords"  content="breakout,映画,予告編,公式HP,トレイラー,trailler,movie" />
+	<meta name="Resource-type" content="Document" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.6/jquery.fullPage.min.css" />
+<!--    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />-->
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="shortcut icon" href="img/favicon.png">
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+	}
+	.intro p{
+		color: #fff;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+	/* Overwriting styles for control arrows for slides
+	* --------------------------------------- */
+	.controlArrow.prev {
+		left: 50px;
+	}
+	.controlArrow.next{
+		right: 50px;
+	}
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+<!--	<script type="text/javascript" src="js/scrolloverflow.js"></script>-->
+<!--	<script type="text/javascript" src="js/fullpage.js"></script>-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.6/jquery.fullPage.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+	<script type="text/javascript">
+        // init fullpage.js
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+                anchors: ['top', 'story', 'trailler', 'character', 'theater', 'lastPage'],
+                menu: '#menu',
+                scrollOverflow: true,
+//                continuousVertical: true,
+                slidesNavigation: true,
+                css3: true
+			});
+		});
+	</script>
+    <script>
+        // for responsive
+        (function($) {
+            $(function() {
+                var $header = $('#top-head');
+                // Nav Fixed
+                $(window).scroll(function() {
+                    if ($(window).scrollTop() > 350) {
+                        $header.addClass('fixed');
+                    } else {
+                        $header.removeClass('fixed');
+                    }
+                });
+                // Nav Toggle Button
+                $('#nav-toggle').click(function(){
+                    $header.toggleClass('open');
+                });
+                $('#global-nav ul li a').click(function(){
+                    $header.toggleClass('open');
+                });
+            });
+        })(jQuery);
+    </script>
+    <script>
+        // for analytics
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-84897501-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+</head>
+<body>
+
+<header id="top-head">
+    <div class="inner">
+        <div id="mobile-head">
+<!--            <h1 class="logo">Logo</h1>-->
+            <div id="nav-toggle">
+                <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <nav id="global-nav">
+            <ul id="menu">
+                <li data-menuanchor="top"><a href="#top">Top</a></li>
+                <li data-menuanchor="story"><a href="#story">Story</a></li>
+                <li data-menuanchor="trailler"><a href="#trailler">Trailler</a></li>
+                <li data-menuanchor="character"><a href="#character">Character</a></li>
+                <li data-menuanchor="theater"><a href="#theater">Theater</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div id="fullpage">
+
+    <div class="section" id="section0">
+        <div id="slide1.1">
+            <h1>top</h1>
+        </div>
+    </div>
+
+    <div class="section" id="section1">
+        <div id="slide1.1">
+            <h1>Story</h1>
+        </div>
+    </div>
+
+    <div class="section" id="section2">
+        <h1>Trailler</h1>
+    </div>
+
+    <div class="section" id="section3">
+        <div class="slide" id="peter">
+            <h1>Peter</h1>
+        </div>
+        <div class="slide" id="max">
+            <h1>Max</h1>
+        </div>
+        <div class="slide" id="walter">
+            <h1>Walter</h1>
+        </div>
+        <div class="slide" id="balboza">
+            <h1>Balboza</h1>
+        </div>
+    </div>
+
+    <div class="section" id="section4">
+        <h1>Theater</h1>
+    </div>
+</div>
+
+</body>
+</html>

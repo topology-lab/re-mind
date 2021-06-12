@@ -1,0 +1,824 @@
+/* >>>> コンテンツページ */
+.page-title {
+    position: absolute;
+    width: auto;
+    top: 40%;
+    left: 10%;
+}
+
+.header_image {
+    width: 100%;
+    min-height: 100%;
+}
+
+.header_image img {
+    margin-top: 1em;
+    width: 100%;
+}
+
+img.title {
+    width: 40%;
+}
+
+.hipster {
+    position: absolute;
+    bottom: -4em;
+    margin-left: 1em;
+}
+
+.hipster-logo {
+    display: inline;
+    *zoom: 1;
+    *display: inline;
+    width: 30%;
+}
+
+.hipster-images {
+    display: inline;
+}
+
+.hipster img{
+    width: auto;
+    max-height: 80px;
+    margin: 0 1em;
+}
+
+.header_image h3 {
+    /* 配置調整 */
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 35%;
+    -webkit-transform: translate(-50%, -50%); /* Safari用 */
+    transform: translate(-50%, -50%);
+
+    /* フォント */
+    color: aliceblue;
+    letter-spacing: 9px;
+    font-size: 2em;
+    font-family: 'Playfair Display', serif;
+    font-weight: lighter;
+
+    /* 横線 */
+    display: flex;
+    align-items: center;
+    text-align: center; /* for no-flexbox browsers */
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+}
+
+/* 左横棒長さ調整 */
+.header_image h3:before {
+    border-top: 1px solid;
+    content: "";
+    display: inline; /* for IE */
+    flex-grow: 1;
+    margin-right: 0.8em;
+    width: 4em;
+}
+
+.contents {
+    margin: 1em 0;
+    height: auto;
+}
+
+/* <<<< コンテンツページ */
+
+/* >>>> story page contents */
+.story {
+    margin: 0 0.5em;
+}
+
+.left {
+    display: inline-block;
+    *zoom: 1; /* for IE6-7 */
+    *display: inline; /* for IE6-7 */
+
+    margin: 0 3em;
+    width: 40%;
+}
+
+.right {
+    display: inline-block;
+    width: 50%;
+    top: 0;
+    vertical-align: top;
+
+    color: aliceblue;
+    font-weight: lighter;
+}
+
+.right h5 {
+    letter-spacing: 6px;
+    font-style: italic;
+    font-weight: normal;
+    font-family: 'Playfair Display', 'Lato', "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+.right p {
+    font-family: 'Noto Sans Japanese', sans-serif;
+    letter-spacing: 2px;
+}
+
+.story h5 {
+    font-size: 1.5em;
+}
+
+.story p {
+    word-break:break-all;
+    padding-top: 0.8em;
+    font-size: 1em;
+}
+/* <<<< story page contents */
+
+/* >>>> cast */
+/* http://degitekunote.com/blog/2014/12/05/css3-display-flex/ */
+#cast {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+}
+
+.icon {
+    float: left;
+    width: 25%;
+    margin: 0.2em;
+}
+
+.icon:hover {
+    opacity: 0.8;
+}
+
+.icon img {
+    width: 100%;
+}
+
+.nameWrap {
+    position: absolute;
+    width: 25%;
+    margin-top: 220px;
+}
+
+.castName {
+    position: relative;
+    width: auto;
+    height: auto;
+    text-align: center;
+    top: 50%;
+
+    color: aliceblue;
+    letter-spacing: 9px;
+    font-size: 2em;
+    font-family: 'Playfair Display', serif;
+    font-weight: lighter;
+    text-decoration: underline;
+    border-bottom: 1px;
+}
+
+.cast_detail {
+    text-decoration: underline;
+}
+
+.cast_modal {
+    height: 100%;
+}
+
+.cast_modal img {
+    height: 100%;
+    margin: 0;
+
+    display: inline-block;
+    vertical-align: middle;
+    *zoom: 1; /* for IE6-7 */
+    *display: inline; /* for IE6-7 */
+}
+
+.cast_modal .txt {
+    color: aliceblue;
+    font-family: 'Playfair Display', serif;
+    font-weight: lighter;
+
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    height: auto;
+    *zoom: 1; /* for IE6-7 */
+    *display: inline; /* for IE6-7 */
+}
+
+.txt {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    height: 40%;
+}
+
+.cast_modal .txt.balboza,
+.cast_modal .txt.max {
+    left: 20px;
+}
+
+.txt p {
+    letter-spacing: 0.3em;
+    font-size: 2em;
+    margin: 0.2em 0;
+}
+
+.txt span {
+    letter-spacing: 0.2em;
+    line-height: 180%;
+    font-size: 0.8em;
+}
+
+.staff {
+    margin: 2em 0;
+    width: 100%;
+    text-align: center;
+}
+
+.staff img {
+    width: 25%;
+    height: 25%;
+}
+
+.staff-left {
+    display: inline-block;
+    float: left;
+    *zoom: 1; /* for IE6-7 */
+    *display: inline; /* for IE6-7 */
+
+    margin: 0;
+    width: 50%;
+}
+
+.staff-right {
+    display: inline-block;
+    width: 50%;
+    top: 0;
+    vertical-align: top;
+
+    color: aliceblue;
+    font-weight: lighter;
+}
+
+.staff big {
+    font-size: 1.5em;
+    letter-spacing: 3px;
+}
+
+/* <<<< cast */
+
+/* >>>> theater */
+.region {
+    text-align: center;
+    margin-bottom: 3em;
+}
+a.button_region {
+    display: inline-block;
+    width: 10%;
+    margin: 0 1em;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid;
+    border-color:#aaaaaa #444444 #444444 #aaaaaa;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.button_region:hover {
+    background: #263248;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+}
+
+.area {
+    vertical-align: middle;
+    line-height: 2em;
+    border: 2px solid;
+    border-color:#aaaaaa #444444 #444444 #aaaaaa;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.theaters {
+    margin: 0 auto;
+    width: 95%;
+    margin-right: 0;
+    border-spacing: 0.4em;
+}
+
+.theaters tr {
+    vertical-align: middle;
+    border-collapse: collapse;
+    border-bottom: solid 1px #aaaaaa;
+    margin: 0.3em 0;
+}
+
+.theaters td.bar {
+    height: 1px;
+    width: 100%;
+    border-top: solid 1px #aaaaaa;
+}
+
+.never {
+    text-align: right;
+}
+/* <<<< theater */
+
+/*
+   see http://www.webopixel.net/javascript/1060.html
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+*::after,
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+// STYLES - essential for sticky footer
+html {
+    min-height: 100%;
+    width: 100%;
+}
+
+body {
+    min-height: 100%;
+    height: auto;
+    font-family: 'Playfair Display', 'Lato', serif;
+    color: aliceblue;
+    background: #eee;
+    background-color: #071217;
+}
+
+a {
+    color: #0b8793;
+}
+
+#global-nav ul li .share_icons {
+    padding: 0 1.6em;
+}
+
+#global-nav ul li .share_icons a {
+    padding: 0 0.4em;
+}
+
+footer {
+    bottom: 0;
+    height: 5em;
+    width: 100%;
+    color: #666;
+    padding: 30px;
+    text-align: center;
+    border-top: solid 1px #bbb;
+    font-family: 'Lato', serif;
+}
+
+footer a {
+    color: #666;
+    text-decoration: none;
+}
+
+.logo {
+    position: static;
+    width: 10%;
+}
+.inner:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* header */
+#top-head {
+    font-size: 14px;
+/*    top: -100px;*/
+/*    position: absolute;*/
+    width: 100%;
+/*    margin: 100px auto 0;*/
+    padding: 30px 0 0;
+    line-height: 1;
+    z-index: 999;
+}
+#top-head a,
+#top-head {
+    color: #fff;
+    text-decoration: none;
+}
+#top-head .inner {
+    position: relative;
+}
+#top-head .logo {
+    float: left;
+    font-size: 36px;
+    margin-left: 1em;
+}
+#global-nav ul {
+    list-style: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 14px;
+}
+#global-nav ul li {
+    float: left;
+    position: relative;
+}
+#global-nav ul li a {
+    padding: 0 1em;
+    letter-spacing: 0.2em;
+}
+
+/* Btn Hover */
+#global-nav ul li:after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    bottom: -5px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+}
+#global-nav ul li:hover:after {
+    background: #fff;
+    bottom: -10px;
+}
+
+
+/* Fixed */
+#top-head.fixed {
+    margin-top: 0;
+    top: 0;
+    position: fixed;
+    padding-top: 10px;
+    height: 55px;
+    background: #fff;
+    background: rgba(255,255,255,.7);
+
+    transition: top 0.65s ease-in;
+    -webkit-transition: top 0.65s ease-in;
+    -moz-transition: top 0.65s ease-in;
+}
+#top-head.fixed .logo {
+    font-size: 24px;
+}
+#top-head.fixed #global-nav ul li a {
+    padding: 0 20px;
+}
+
+/* Fixed Btn Hover */
+#top-head.fixed #global-nav ul li:after {
+    bottom: -10px;
+}
+#top-head.fixed #global-nav ul li:hover:after {
+    background: #0062B8;
+    bottom: -20px;
+}
+
+/* Toggle Button */
+#nav-toggle {
+    display: none;
+    position: absolute;
+    right: 18px;
+    top: 14px;
+    width: 34px;
+    height: 36px;
+    cursor: pointer;
+    z-index: 101;
+}
+
+#nav-toggle div {
+    position: relative;
+}
+#nav-toggle span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #666;
+    left: 0;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+}
+#nav-toggle span:nth-child(1) {
+    top: 0;
+}
+#nav-toggle span:nth-child(2) {
+    top: 11px;
+}
+#nav-toggle span:nth-child(3) {
+    top: 22px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+/* >>>> story */
+    .story {
+    }
+
+    .left {
+        margin: 0;
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+        margin: 0.2em;
+    }
+
+    .right h5 {
+        letter-spacing: 0;
+    }
+
+    .right p {
+        letter-spacing: 1px;
+    }
+
+    .story h5 {
+        font-size: 1.5em;
+    }
+
+    .story p {
+        word-break:break-all;
+        padding-top: 0.8em;
+        font-size: 0.8em;
+    }
+/* <<<< story */
+
+/* >>>> cast */
+    .cast_modal {
+        height: auto;
+    }
+
+    .cast_modal img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .cast_modal .txt {
+        width: 100%;
+    }
+
+    .castName {
+        letter-spacing: 0.2em;
+        top: 20%;
+        font-size: 0.7em;
+    }
+
+    .nameWrap {
+        margin-top: 50px;
+    }
+
+    .txt {
+        position: static;
+        top: 0;
+        left: 0;
+    }
+
+    .txt p {
+        letter-spacing: 0.2em;
+        font-size: 2em;
+        margin: 0.5 0;
+    }
+
+    .txt span {
+        letter-spacing: 0.1em;
+        position: relative;
+    }
+
+    .icon {
+        width: 80%;
+        height: auto;
+        margin: 0;
+    }
+
+    .icon a {
+        display: block;
+    }
+
+    .staff {
+        margin: 2em 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .staff img {
+        width: 50%;
+    }
+
+    .staff-left {
+        width: 50%;
+    }
+
+    .staff-right {
+        width: 50%;
+    }
+
+    .staff p {
+        font-size: 0.6em;
+    }
+
+    .staff big {
+        font-size: 1.3em;
+        letter-spacing: 2px;
+    }
+
+/* <<<< cast */
+
+/* >>>> theater */
+    a.button_region {
+        margin: 0;
+        display: block;
+        width: 99%;
+    }
+    .area {
+        font-size: 1.2em;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .theaters {
+        font-size: 0.8em;
+    }
+/* <<<< theater */
+
+    .header_image img {
+        margin-top: 0;
+    }
+
+    .header_image h3 {
+        top: 25%;
+        font-size: 1em;
+    }
+
+    .header_image {
+        margin: 56px 0 0;
+        height: auto;
+    }
+
+    .hipster {
+        position: static;
+        bottom: 0;
+        margin: 0 1em;
+    }
+
+    .hipster-logo img {
+        width: auto;
+        height: 60px;
+    }
+
+    .hipster-images {
+        display: inline-block;
+        width: 50%;
+    }
+
+    .hipster-images img {
+        width: 30%;
+        margin: 0;
+    }
+
+    .page-title {
+        top: 25%;
+        left: 20%;
+    }
+
+    .page-title
+    .title {
+        color: aliceblue;
+        letter-spacing: 12px;
+        font-size: 2em;
+    }
+
+    .logo {
+        width: 40%;
+    }
+
+    .partition {
+        display: none;
+    }
+    footer {
+        bottom: 0;
+        margin-bottom: 1em;
+    }
+
+    .contents {
+        margin: 1em 0;
+    }
+
+    #main-visual {
+        height: 300px;
+    }
+
+    #top-head,
+    .inner {
+        width: 100%;
+        padding: 0;
+    }
+
+    #top-head {
+        top: 0;
+        position: fixed;
+        margin-top: 0;
+    }
+    /* Fixed reset */
+    #top-head.fixed {
+        padding-top: 0;
+        background: transparent;
+    }
+
+    #mobile-head {
+        background: #071217;
+        width: 100%;
+        height: 56px;
+        z-index: 999;
+        position: relative;
+    }
+
+    #top-head.fixed .logo,
+    #top-head .logo {
+        position: absolute;
+        left: 0.1em;
+        top: 13px;
+        color: #fff;
+        font-size: 26px;
+    }
+
+    #global-nav {
+        position: absolute;
+        top: -500px;
+        background: #333;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+    }
+    #global-nav ul {
+        list-style: none;
+        position: static;
+        right: 0;
+        bottom: 0;
+        font-size: 11px;
+    }
+    #global-nav ul li {
+        float: none;
+        position: static;
+    }
+    #global-nav ul li:after  {
+        display: none;
+    }
+    #top-head #global-nav ul li a,
+    #top-head.fixed #global-nav ul li a {
+        width: 100%;
+        display: block;
+        color: #fff;
+        padding: 18px 0;
+    }
+
+    #top-head #global-nav ul li .share_icons a,
+    #top-head.fixed #global-nav ul li .share_icons a {
+        display: inline;
+        margin: 2em 0.5em;
+    }
+
+    #top-head #global-nav ul li .share_icons a i,
+    #top-head.fixed #global-nav ul li .share_icons a i {
+        padding: 18px 5px;
+    }
+
+    #nav-toggle {
+        display: block;
+    }
+    .open #nav-toggle span:nth-child(1) {
+        top: 11px;
+        -webkit-transform: rotate(315deg);
+        -moz-transform: rotate(315deg);
+        transform: rotate(315deg);
+    }
+    .open #nav-toggle span:nth-child(2) {
+        width: 0;
+        left: 50%;
+    }
+    .open #nav-toggle span:nth-child(3) {
+        top: 11px;
+        -webkit-transform: rotate(-315deg);
+        -moz-transform: rotate(-315deg);
+        transform: rotate(-315deg);
+    }
+    .open #global-nav {
+        -moz-transform: translateY(556px);
+        -webkit-transform: translateY(556px);
+        transform: translateY(556px);
+    }
+}
